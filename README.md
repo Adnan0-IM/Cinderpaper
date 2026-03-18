@@ -8,11 +8,11 @@ This is a custom Obsidian theme, curated from the Nord template and inspired by 
 
 ### Light Mode
 
-[![Light Mode](https://raw.githubusercontent.com/Adnan0-IM/obsidian-cinderpaper-theme/main/screenshots/light-mode.png)](https://raw.githubusercontent.com/Adnan0-IM/obsidian-cinderpaper-theme/main/light-mode.png)
+[![Light Mode](light-mode.png)](light-mode.png)
 
 ### Dark Mode
 
-[![Dark Mode](https://raw.githubusercontent.com/Adnan0-IM/obsidian-cinderpaper-theme/main/screenshots/dark-mode.png)](https://raw.githubusercontent.com/Adnan0-IM/obsidian-cinderpaper-theme/main/dark-mode.png)
+[![Dark Mode](dark-mode.png)](dark-mode.png)
 
 ## Installation
 
