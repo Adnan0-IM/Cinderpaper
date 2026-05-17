@@ -80,6 +80,16 @@ body {
 }
 
 .theme-dark {
+	--red_x: 220, 118, 95;
+	--orange_x: 235, 160, 95;
+	--yellow_x: 240, 196, 100;
+	--green_x: 160, 188, 132;
+	--purple_x: 196, 146, 134;
+	--frost0_x: 145, 193, 205;
+	--frost1_x: 136, 178, 221;
+	--frost2_x: 118, 151, 204;
+	--frost3_x: 110, 140, 190;
+
 	--color-red-rgb: var(--red_x);
 	--color-red: var(--red);
 	--color-purple-rgb: var(--purple_x);
@@ -187,6 +197,16 @@ body {
 }
 
 .theme-light {
+	--red_x: 146, 68, 54;
+	--orange_x: 145, 90, 45;
+	--yellow_x: 125, 100, 35;
+	--green_x: 86, 120, 80;
+	--purple_x: 142, 101, 92;
+	--frost0_x: 64, 108, 128;
+	--frost1_x: 64, 110, 165;
+	--frost2_x: 56, 90, 138;
+	--frost3_x: 48, 78, 122;
+
 	--color-red-rgb: var(--red_x);
 	--color-red: var(--red);
 	--color-purple-rgb: var(--purple_x);
@@ -294,36 +314,36 @@ body {
 }
 
 table {
-	border: 1px solid var(--background-secondary) !important;
+	border: 1px solid var(--background-secondary);
 	border-collapse: collapse;
 }
 
 thead {
-	border-bottom: 2px solid var(--background-modifier-border) !important;
+	border-bottom: 2px solid var(--background-modifier-border);
 }
 
 th {
-	font-weight: 600 !important;
-	border: 1px solid var(--background-secondary) !important;
+	font-weight: 600;
+	border: 1px solid var(--background-secondary);
 }
 
 td {
-	border-left: 1px solid var(--background-secondary) !important;
-	border-right: 1px solid var(--background-secondary) !important;
-	border-bottom: 1px solid var(--background-secondary) !important;
+	border-left: 1px solid var(--background-secondary);
+	border-right: 1px solid var(--background-secondary);
+	border-bottom: 1px solid var(--background-secondary);
 }
 
 .markdown-rendered tbody tr:nth-child(even) {
-	background-color: var(--table-row-even-background) !important;
+	background-color: var(--table-row-even-background);
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
-	background-color: var(--table-row-odd-background) !important;
+	background-color: var(--table-row-odd-background);
 }
 
 .markdown-rendered tbody tr:nth-child(even):hover,
 .markdown-rendered tbody tr:nth-child(odd):hover {
-	background-color: var(--table-row-background-hover) !important;
+	background-color: var(--table-row-background-hover);
 }
 
 .markdown-rendered mark {
@@ -332,12 +352,12 @@ td {
 }
 
 .markdown-rendered mark a {
-	color: var(--red) !important;
+	color: var(--red);
 	font-weight: 600;
 }
 
 .search-result-file-matched-text {
-	color: var(--text-highlight-fg) !important;
+	color: var(--text-highlight-fg);
 }
 
 .cm-hashtag-begin:hover,
@@ -362,22 +382,22 @@ input[type="checkbox"]:checked:after {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	line-height: var(--line-height-tight) !important;
+	line-height: var(--line-height-tight);
 }
 
 .cm-url {
-	color: var(--link-url) !important;
+	color: var(--link-url);
 }
 
 .cm-url:hover {
-	color: var(--link-url-hover, var(--text-accent-hover)) !important;
+	color: var(--link-url-hover, var(--text-accent-hover));
 }
 
 .markdown-rendered a,
 .cm-link .cm-underline,
 .external-link {
-	text-decoration-thickness: 1.5px;
-	text-underline-offset: 0.16em;
+	text-decoration: none;
+	box-shadow: inset 0 -1px 0 currentColor;
 }
 
 .markdown-rendered a:hover,
@@ -387,7 +407,7 @@ pre[class*="language-"] {
 
 /* Keep highlight/marks the same between viewer and editor. */
 .cm-highlight {
-	color: var(--text-highlight-fg) !important;
+	color: var(--text-highlight-fg);
 }
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
@@ -442,7 +462,7 @@ pre[class*="language-"] {
 
 /* Keep inline code the same between viewer and editor. */
 .cm-inline-code {
-	color: var(--code-normal) !important;
+	color: var(--code-normal);
 	background-color: var(--inline-code-background);
 	border-top: 1px solid var(--inline-code-border);
 	border-bottom: 1px solid var(--inline-code-border);
@@ -480,7 +500,7 @@ pre[class*="language-"] {
 }
 
 .cm-line .cm-strong {
-	color: var(--bold-color) !important;
+	color: var(--bold-color);
 }
 
 /*
@@ -490,7 +510,7 @@ pre[class*="language-"] {
 /*
 .cm-formatting-list
 {
-     padding-right: 4px !important;
+	padding-right: 4px;
 }
 */
 
@@ -501,60 +521,60 @@ pre[class*="language-"] {
 /*
 .cm-indent 
 {
-    text-indent: 1em !important;
+	text-indent: 1em;
 }
 */
 
 .mermaid .note {
-	fill: var(--mermaid-note) !important;
+	fill: var(--mermaid-note);
 }
 
 .mermaid .loopLine {
-	stroke: var(--mermaid-loopline) !important;
+	stroke: var(--mermaid-loopline);
 }
 
 .mermaid .loopText > tspan,
 .mermaid .entityLabel {
-	fill: var(--red) !important;
+	fill: var(--red);
 }
 
 .mermaid .exclude-range {
-	fill: var(--mermaid-exclude) !important;
+	fill: var(--mermaid-exclude);
 }
 
 .mermaid .sequenceNumber {
-	fill: var(--mermaid-seqnum) !important;
+	fill: var(--mermaid-seqnum);
 }
 
 .calendar .week-num {
-	color: var(--calendar-week) !important;
+	color: var(--calendar-week);
 }
 
 .calendar .today {
-	color: var(--calendar-today) !important;
+	color: var(--calendar-today);
 }
 
 .calendar .week-num:hover,
 .calendar .day:hover {
-	color: var(--calendar-hover) !important;
-	background-color: var(--calendar-background-hover) !important;
+	color: var(--calendar-hover);
+	background-color: var(--calendar-background-hover);
 }
 
 .markdown-embed-title {
 	color: var(--yellow);
-	font-weight: 600 !important;
+	font-weight: 600;
 }
 
 .cm-active {
-	background-color: var(--cursor-line-background) !important;
+	background-color: var(--cursor-line-background);
 }
 
 .nav-file-tag {
-	color: var(--nav-file-tag) !important;
+	color: var(--nav-file-tag);
 }
 
 .is-flashing {
-	background-color: var(--flashing-background) !important;
+	background-color: var(--flashing-background);
 }
 
 .dataview.inline-field-key {
@@ -563,8 +583,8 @@ pre[class*="language-"] {
 	padding-left: 4px;
 	font-family: var(--font-monospace);
 	font-size: var(--font-smaller);
-	color: var(--dataview-key) !important;
-	background-color: var(--dataview-key-background) !important;
+	color: var(--dataview-key);
+	background-color: var(--dataview-key-background);
 }
 
 .dataview.inline-field-value {
@@ -573,8 +593,8 @@ pre[class*="language-"] {
 	padding-right: 4px;
 	font-family: var(--font-monospace);
 	font-size: var(--font-smaller);
-	color: var(--dataview-value) !important;
-	background-color: var(--dataview-value-background) !important;
+	color: var(--dataview-value);
+	background-color: var(--dataview-value-background);
 }
 
 .suggestion-highlight {
